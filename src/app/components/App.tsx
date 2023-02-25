@@ -16,7 +16,7 @@ function App() {
   };
 
   const onCancel = () => {
-    parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*');
+    parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*'); // Communicates to figma that plugin should stop
   };
 
   React.useEffect(() => {
@@ -32,7 +32,7 @@ function App() {
   return (
     <div>
       <img src={logo} />
-      <h2>Rectangle Creator</h2>
+      <h2>Rectangle Creator Test</h2>
       <p>
         Count: <input ref={countRef} />
       </p>
